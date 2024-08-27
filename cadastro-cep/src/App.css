@@ -1,0 +1,64 @@
+/*
+.vermelho { #880606 };
+.laranja { #d53d0c };
+.amarelo { #ff8207 };
+.preto { #231d1e };
+.branco { #fcfcfc };
+*/
+
+:root{
+    --vermelho: #880606;
+    --laranja: #d53d0c;
+    --amarelo: #ff8207;
+    --preto: #231d1e;
+    --branco: #fcfcfc;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+div.App{
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+main{
+    background-color: var(--laranja);
+    width: 700px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 60px;
+}
+main h1.Titulo{
+    font-size: 50px;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form input{
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+}
+
+form div.info_endereco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
