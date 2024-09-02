@@ -1,9 +1,7 @@
 import axios from 'axios';
 
-function localizador(){
-    axios.create(
-        baseURL: 
-    )
-}
+const localizador = axios.create({
+    baseURL: "https://viacep.com.br/ws/"
+})
 
-export default localizador
+export default localizador;
