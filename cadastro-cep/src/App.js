@@ -1,6 +1,7 @@
 import './App.css';
 import {useState} from 'react'
-import api from "./services/api"
+
+import api from './services/api';
 
 function App() {
 
@@ -25,29 +26,17 @@ function App() {
 
   return (
     <div className="App">
-        <main>
-          <h1 className="Titulo">Cadastre-se</h1>
-          <form>
-            <span>Nome: </span>
-            <input type="text" placeholder="Digite seu nome" required/>
+       <main>
+          <input type='text' placeholder='Digite seu Cep' value={input} onChange={(e)=> setInput(e.target.value)}/>
+          <button className='button' onSubmit={handleSearch}>Checar Endereco</button>
 
-            <span>Cpf: </span>
-            <input type="text" placeholder="Digite seu Cpf" required/>
-
-            <span>Sexo: </span>
-            <input type="text" placeholder="Digite seu Genero" required/>
-
-            <span>CEP: </span>
-            <input type="text" placeholder="Digite seu Cep" required value={input} onChange={(e) => setInput(e.target.value)}/>
-
-            <button className="button" onSubmit={handleSearch}>Checar Endereco</button>
-
-            <div className="info_endereco">
-              <span>{cep.uf}</span>
-            </div>
-
-          </form>
-        </main>
+          <div className='info_endereco'>
+            <span>CEP: {cep.cep}</span>
+            <span>Rua: {cep.logradouro}</span>
+            <span>Bairro: {cep.bairro}</span>
+            <span>Estado {cep.localidade} {cep.uf}</span>
+          </div>
+       </main>
     </div>
   );
 }
