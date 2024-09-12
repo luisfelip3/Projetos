@@ -1,0 +1,65 @@
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.config{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.config:hover{
+    padding: 15px;
+    transition-duration: 0.5s;
+}
+#amarelo{
+    background-color: yellow;
+    border-style: outset;
+    color: black;
+}
+#azul{
+    background-color: blue;
+    border-style: outset;
+    color: white;
+}
+#branco{
+    background-color: white;
+    border-style: outset;
+    color: black;
+}
+#cinza{
+    background-color: gray;
+    border-style: outset;
+    color: white;
+}
+#laranja{
+    background-color: orange;
+    border-style: outset;
+    color: black;
+}
+#marrom{
+    background-color: brown;
+    border-style: outset;
+    color: white;
+}
+#preto{
+    background-color: black;
+    border-style: outset;
+    color: white;
+}
+#verde{
+    background-color: green;
+    border-style: outset;
+    color: white;
+}
+#vermelho{
+    background-color: red;
+    border-style: outset;
+    color: black;
+}
+#violeta{
+    background-color: purple;
+    border-style: outset;
+    color: white;
+}

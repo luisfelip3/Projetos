@@ -1,0 +1,30 @@
+div#verde{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: green;
+    width: 500px;
+    height: 200px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    border-style: groove;
+    box-shadow: 2px 2px black;
+    border-radius: 20px;
+    animation: flipTitle 2s;
+}
+
+div#verde p{
+    font-size: 25px;
+    color: white;
+}
+
+@keyframes flipTitle {
+    from{
+        transform: rotateX(90deg);
+    }
+    to{
+        transform: rotateX(0deg);
+    }
+}
