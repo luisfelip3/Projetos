@@ -8,6 +8,7 @@ nav{
     padding: 10px;
     border-radius: 10px;
     text-decoration: none;
+   
 }
 .config:hover{
     padding: 15px;
@@ -15,51 +16,51 @@ nav{
 }
 #amarelo{
     background-color: yellow;
-    border-style: outset;
-    color: black;
+     border-style: none;
+    color: darkblue;
 }
 #azul{
     background-color: blue;
-    border-style: outset;
-    color: white;
+     border-style: none;
+    color: orange;
 }
 #branco{
     background-color: white;
-    border-style: outset;
+     border-style: none;
     color: black;
 }
 #cinza{
     background-color: gray;
-    border-style: outset;
+     border-style: none;
     color: white;
 }
 #laranja{
     background-color: orange;
-    border-style: outset;
-    color: black;
+     border-style: none;
+    color: darkblue;
 }
 #marrom{
     background-color: brown;
-    border-style: outset;
-    color: white;
+     border-style: none;
+    color: burlywood;
 }
 #preto{
     background-color: black;
-    border-style: outset;
+     border-style: none;
     color: white;
 }
 #verde{
     background-color: green;
-    border-style: outset;
-    color: white;
+     border-style: none;
+    color: lightgray;
 }
 #vermelho{
     background-color: red;
-    border-style: outset;
-    color: black;
+     border-style: none;
+    color: burlywood;
 }
 #violeta{
     background-color: purple;
-    border-style: outset;
-    color: white;
+     border-style: none;
+    color: gold;
 }
