@@ -1,8 +1,13 @@
-# React + Vite
+# Psicologia das Cores
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Projeto front-end utilizando react + vite.
 
-Currently, two official plugins are available:
+Esse projeto utiliza como base principal a biblioteca do react-router-dom para controlar a mudança das páginas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Como surgiu?
+
+A ideia para a criação desse projeto veio baseado no livro "Psicologia Aplicada No Cotidiano", mas especificamente no capitulo 11 que fala sobre quais sentimentos as cores trazem para o ser humano.
+
+## Iniciar
+
+Para inicialização do projeto basta digitar no terminal **npm run dev**
