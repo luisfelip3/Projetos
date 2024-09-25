@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --azul-claro: #A0D1E8;
+  --verde-menta: #A8E0B4;
+  --amarelo-sol: #F9E37B;
+}
+
+body{
+  height: 100vh;
+  background: linear-gradient(135deg, var(--azul-claro), var(--amarelo-sol));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}

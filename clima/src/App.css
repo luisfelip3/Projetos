@@ -1,0 +1,63 @@
+:root{
+  --azul-claro: #A0D1E8;
+  --verde-menta: #A8E0B4;
+  --amarelo-sol: #F9E37B;
+  --cinza-nublado: #B0B0B0;
+  --branco: #FFF;
+}
+
+.main{
+  background-color: var(--verde-menta);
+  width: 500px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 30px;
+  box-shadow: 3px 3px rgb(85, 81, 81);
+}
+
+.input{
+  padding: 30px;
+}
+
+.input button{
+  width: 40px;
+  height: 40px;
+  background-color: var(--verde-menta);
+  border: none;
+  font-size: 20px;
+}
+
+.input input{
+  border: none;
+  outline: none;
+  width: 23 0px;
+  height: 40px;
+  margin: 10px;
+  border-radius: 10px;
+  color: var(--branco);
+  background-color: var(--azul-claro);
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.input input::placeholder{
+  color: var(--branco);
+}
+
+.descricao_clima{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.descricao_clima span{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: var(--branco);
+  margin: 30px;
+}
