@@ -46,7 +46,7 @@ function App() {
             <p className="descricao_Tempo">{climaData.weather?.[0]?.description}</p>
           <img src={`http://openweathermap.org/img/wn/${climaData.weather[0].icon}@2x.png`} alt={climaData.weather[0].description} className='descricao_icone'/>
           </span>
-          <span>{climaData.main?.humidity}%</span>  
+          <span>Umidade do ar {climaData.main?.humidity}%</span>  
         </div>  
         )}
       </div>
