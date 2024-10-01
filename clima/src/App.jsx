@@ -19,7 +19,7 @@ function App() {
       });
       setClimaData(response.data);
     }catch (err){
-      console.log("Erro ao buscar", err);
+      window.alert("OCORREU UM ERRO NA BUSCA");
     }
 
   }
@@ -31,13 +31,13 @@ function App() {
           <h1>Clima</h1>
         </div>
         <div className='input'>
-          <input type='text' 
+          <input type='text' id='input'
           value={city}
           onChange={(e) => setCity(e.target.value)}
           placeholder='Digite o nome da cidade'
+          
           />
           <button onClick={handleSearch}><FaSearch/></button>
-
         </div>
         {climaData && (
           <div className='descricao_clima'>
@@ -51,6 +51,7 @@ function App() {
         )}
       </div>
     </div>
+    
   )
 }
 
