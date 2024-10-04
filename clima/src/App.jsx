@@ -28,7 +28,7 @@ function App() {
     <div className='App'>
       <div className='main'>
         <div className="title">
-          <h1>Clima</h1>
+          <h1>{city}</h1>
         </div>
         <div className='input'>
           <input type='text' id='input'

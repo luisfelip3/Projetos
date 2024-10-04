@@ -7,7 +7,7 @@ const apiClima = axios.create({
     params: {
         appid : apiKey,
         units: 'metric',
-        lang: 'pt'
+        lang: 'pt',
     }
 })
 
