@@ -5,6 +5,7 @@ import apiClima from '../api/api';
 import React, {useState} from 'react';
 
 function App() {
+
   const [city, setCity] = useState('');
   const [climaData, setClimaData] = useState(null);
 
@@ -35,9 +36,13 @@ function App() {
           value={city}
           onChange={(e) => setCity(e.target.value)}
           placeholder='Digite o nome da cidade'
-          
+          onKeyDown={(e) => {
+            if(e.key === 'Enter'){
+              handleSearch();
+            }
+          }}
           />
-          <button onClick={handleSearch}><FaSearch/></button>
+          <button onClick={handleSearch}  id='button'><FaSearch/></button>
         </div>
         {climaData && (
           <div className='descricao_clima'>

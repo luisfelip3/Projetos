@@ -15,5 +15,19 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: auto;
+  margin: auto;  
+}
+
+div.sol{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  height: auto; 
+}
+
+div.lua{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: auto; 
 }
