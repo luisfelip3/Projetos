@@ -8,20 +8,20 @@
 
 .main{ 
   background-color: var(--verde-menta);
-  width: 500px;
+  width: 800px;
   height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   border-radius: 30px;
   box-shadow: 3px 3px rgb(85, 81, 81);
+  position: relative;
 }
 
 .title{
-  color: var(--branco);
-  font-family: 'Roboto', sans-serif;
-  font-size: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .input{
@@ -39,19 +39,28 @@
 .input input{
   border: none;
   outline: none;
-  width: 23 0px;
+  width: 700px;
   height: 40px;
   margin: 10px;
   border-radius: 10px;
   color: black;
   background-color: var(--azul-claro);
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 20px;
   text-align: center;
 }
 
 .input input::placeholder{
   color: var(--branco);
+}
+.temperatura{
+  color: var(--branco);
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  align-content: first baseline;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
 }
 
 .descricao_clima{
@@ -61,9 +70,10 @@
   flex-direction: column;
 }
 
-.descricao_clima span{
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
+.descricao_clima > span{
+  font-family: 'Poppins', sans-serif;
+  
+  font-size: 50px;
   color: black;
   margin: 10px;
 
@@ -73,6 +83,22 @@
   flex-direction: column;
 }
 
-.descricao_clima span img.descricao_icone{
-  width: 80px;
+
+.detalhes_tempo_container{
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
 }
+
+.informacoes_clima{
+  text-align: center;
+  margin-top: 10px;
+}
+
+.informacoes_clima {
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  color: black;
+  margin: 10px;
+}
+

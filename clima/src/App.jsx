@@ -1,5 +1,6 @@
 import './App.css'
 import { FaSearch } from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
 
 import apiClima from '../api/api';
 import React, {useState} from 'react';
@@ -27,11 +28,7 @@ function App() {
 
   return (
     <div className='App'>
-      <div className='main'>
-        <div className="title">
-          <h1>{city}</h1>
-        </div>
-        <div className='input'>
+      <div className='input'>
           <input type='text' id='input'
           value={city}
           onChange={(e) => setCity(e.target.value)}
@@ -44,15 +41,28 @@ function App() {
           />
           <button onClick={handleSearch}  id='button'><FaSearch/></button>
         </div>
+      <div className='main'>
+        <div className="title">
+          <h1>{city}<FaLocationDot /></h1>
+        </div>
+        
         {climaData && (
           <div className='descricao_clima'>
-          <span>{Math.round(climaData.main?.temp)}°C</span>
-          <span>
-            <p className="descricao_Tempo">{climaData.weather?.[0]?.description}</p>
-          <img src={`http://openweathermap.org/img/wn/${climaData.weather[0].icon}@2x.png`} alt={climaData.weather[0].description} className='descricao_icone'/>
-          </span>
-          <span>Umidade do ar {climaData.main?.humidity}%</span>  
-        </div>  
+          <div className="temperatura">
+            <span className='temperatura'>
+            <h1>{Math.round(climaData.main?.temp)}°C</h1>
+            <img src={`http://openweathermap.org/img/wn/${climaData.weather[0].icon}@2x.png`} alt={climaData.weather[0].description} className='descricao_icone'/>
+            </span>
+          </div>
+          <div className="detalhes_tempo_container">
+            
+              <div className="informacoes_clima"><span>Umidade do ar {climaData.main?.humidity}%</span></div>
+              <div className="informacoes_clima"><span>visibilidade {climaData.visibility}</span>m</div>
+              <div className="informacoes_clima"><span>pressão do ar {climaData.main?.pressure}hPa</span></div>
+              <div className="informacoes_clima"><span>vento {climaData.wind?.speed}km/h</span></div>
+            
+          </div>
+          </div> 
         )}
       </div>
     </div>
